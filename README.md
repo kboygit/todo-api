@@ -1,24 +1,19 @@
-# README
+# Restful JSON-Api
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### Practicing this dependencies
 
-Things you may want to cover:
+    gem 'rspec-rails'
+    gem 'factory_girl_rails'
+    gem 'shoulda-matchers'
+    gem 'database_cleaner'
+    gem 'faker'
 
-* Ruby version
+### Getting to familiarize more on rspec's expressive DSL(Domain Specific Language) TDD side of testing.
 
-* System dependencies
+    RSpec.describe KirbyAbs, type:model do
+      it { should have_many(:items).dependent(:destroy) }
+      it { should validate_presence_of(:title) }
+      it { should validate_presence_of(:created_by) }
+    end
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### Practicing more on test driven development cycle and habits.
